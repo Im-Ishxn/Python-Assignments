@@ -59,7 +59,7 @@ student = {
     "name": "Ishan",
     "age": 18,
     "grade": "A",
-    "city": "Delhi"
+    "city": "Pune"
 }
 
 # keys() -> returns all keys
