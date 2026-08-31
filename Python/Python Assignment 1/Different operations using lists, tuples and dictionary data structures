@@ -77,4 +77,6 @@ print("List of values:", list(student.values()))
 # items() -> returns key-value pairs as tuples
 print("Items:", student.items())
 print("List of items:", list(student.items()))
+#setdefault() -> returns the value of a key, or sets it to a default if the key is not found
+print("City:", student.setdefault("city", "Not found"))
 
