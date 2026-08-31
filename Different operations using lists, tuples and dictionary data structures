@@ -1,0 +1,80 @@
+# Python program to demonstrate list operations
+
+fruits = ["apple", "banana", "mango"]
+
+# append(): adds an item at the end
+fruits.append("orange")
+print("After append:", fruits)
+
+# insert(): adds an item at a specific index
+fruits.insert(1, "grape")
+print("After insert:", fruits)
+
+# remove(): removes the first matching item
+fruits.remove("banana")
+print("After remove:", fruits)
+
+# pop(): removes and returns the item at a given index
+popped_fruit = fruits.pop(2)
+print("Popped item:", popped_fruit)
+print("After pop:", fruits)
+
+# sort(): sorts the list in ascending order
+fruits.sort()
+print("After sort:", fruits)
+print()
+print()
+print()
+# Demonstrating tuple operations
+# Note: Tuples are immutable, so append/remove are done by converting to a list first.
+
+# 1. Create a tuple
+numbers = (10, 20, 30)
+print("Original tuple:", numbers)
+
+# 2. Find the length of the tuple
+print("Length of tuple:", len(numbers))
+
+# 3. Append one item to the tuple
+list_numbers = list(numbers)
+list_numbers.append(40)
+updated_tuple = tuple(list_numbers)
+print("After append:", updated_tuple)
+
+# 4. Append multiple items to the tuple
+list_numbers.extend([50, 60, 70])
+updated_tuple = tuple(list_numbers)
+print("After multiple append:", updated_tuple)
+
+# 5. Remove an item from the tuple
+list_numbers.remove(30)
+updated_tuple = tuple(list_numbers)
+print("After remove:", updated_tuple)
+print()
+print()
+print()
+# Dictionary example using keys(), get(), values(), and items()
+
+student = {
+    "name": "Ishan",
+    "age": 18,
+    "grade": "A",
+    "city": "Delhi"
+}
+
+# keys() -> returns all keys
+print("Keys:", student.keys())
+print("List of keys:", list(student.keys()))
+
+# get() -> returns the value of a key, or default if the key is not found
+print("Name:", student.get("name"))
+print("Phone:", student.get("phone", "Not found"))
+
+# values() -> returns all values
+print("Values:", student.values())
+print("List of values:", list(student.values()))
+
+# items() -> returns key-value pairs as tuples
+print("Items:", student.items())
+print("List of items:", list(student.items()))
+
